@@ -44,13 +44,7 @@ export const StudentRegistration = () => {
         <div>
 
             <form onSubmit={handleSubmit(submit)}>
-                <div>
-                    <label>Name</label>
-                    <input type="text" name='name' {...register("name", validate.name)}></input>
-                    {
-                        errors.name && <span>{errors.name.message}</span>
-                    }
-                </div>
+                
                 <div>
                     <label>Age</label>
                     <input type="text" name='age' {...register("age", validate.age)}></input>
@@ -95,7 +89,7 @@ export const StudentRegistration = () => {
 
 
 
-                <input type="submit" value="Submit"></input>
+                
             </form>
 
         </div>

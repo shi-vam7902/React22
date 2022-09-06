@@ -5,11 +5,25 @@ export const Navbar = () => {
         <div>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Dpharma</a>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
+                            <Link class="nav-link" to="/adduser">Register Doctor</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link" to="/users">View Dotor</Link>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <Link class="nav-link" to="/deleteUser">Delete Doctor</Link>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <Link class="nav-link" to="/updateuser"> Update Doctor</Link>
+                        </li>
+                        {/* <li class="nav-item active">
                             <Link class="nav-link" to="/aboutus">About Us </Link>
                         </li>
                         <li class="nav-item">
@@ -24,7 +38,8 @@ export const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <Link class="nav-link " to="/products">Products</Link>
-                        </li>
+                        </li> */}
+
                     </ul>
 
                 </div>

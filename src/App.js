@@ -15,6 +15,12 @@ import { Header } from "./components/Header";
 import {Footer} from "./crudEmployee/Footer"
 import { UserApi } from './api/UserApi';
 import {LoadingSpinner} from './api/LoadingSpinner'
+import { RapidApi } from './api/RapidApi';
+import { TaskApi } from './api/TaskApi';
+import { RegisterUserType } from './components/CrudUserType/RegisterUserType';
+import { NavbarUser } from './components/CrudUserType/NavbarUser';
+import { ViewUserType } from './components/CrudUserType/ViewUserType';
+import { submitTask } from './Tasks/submitTask';
 function App() {
 
   return (
@@ -30,10 +36,12 @@ function App() {
         <Route path='/product/:id' element={<ProductDetail/>} />
 
       </Routes> */}
-      <Header/>
-      <UserApi/>
-      <Footer/>
-
+      {/* <Routes>
+        <Route path='/userType' element={<RegisterUserType/>}></Route>
+        <Route path='/viewUser' element={<ViewUserType/>}></Route>
+      </Routes> */}
+        <submitTask/>
+        <NavbarUser/>
     </div>
 
   );
